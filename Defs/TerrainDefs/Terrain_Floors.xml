@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <TerrainDef Name="WarningTileBase" ParentName="FloorBase" Abstract="True">
+        <statBases>
+            <WorkToBuild>800</WorkToBuild>
+			<Beauty>1</Beauty>
+            <Cleanliness>0.2</Cleanliness>
+        </statBases>
+        <constructEffect>ConstructMetal</constructEffect>
+        <researchPrerequisites>
+            <li>Smithing</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+    </TerrainDef>
+
+    <TerrainDef ParentName="WarningTileBase">
+        <defName>RedWarning</defName>
+        <label>Red Warning</label>
+        <description>?</description>
+        <texturePath>Terrain/Surfaces/RedWarning</texturePath>
+        <costList>
+            <Steel>7</Steel>
+        </costList>
+    </TerrainDef>
+
+    <TerrainDef ParentName="WarningTileBase">
+        <defName>OrangeWarning</defName>
+        <label>Orange Warning</label>
+        <description>?</description>
+        <texturePath>Terrain/Surfaces/OrangeWarning</texturePath>
+        <costList>
+            <Steel>7</Steel>
+        </costList>
+    </TerrainDef>
+
+    <TerrainDef ParentName="WarningTileBase">
+        <defName>YellowWarning</defName>
+        <label>Yellow Warning</label>
+        <description>?</description>
+        <texturePath>Terrain/Surfaces/YellowWarning</texturePath>
+        <costList>
+            <Steel>7</Steel>
+        </costList>
+    </TerrainDef>
+
+    <TerrainDef ParentName="WarningTileBase">
+        <defName>Grate</defName>
+        <label>Grate</label>
+        <description>?</description>
+        <texturePath>Terrain/Surfaces/Grate</texturePath>
+        <costList>
+            <Steel>5</Steel>
+        </costList>
+    </TerrainDef>
+
+    <TerrainDef ParentName="WarningTileBase">
+        <defName>DarkMetal</defName>
+        <label>Dark Metal</label>
+        <description>?</description>
+        <texturePath>Terrain/Surfaces/DarkMetal</texturePath>
+        <costList>
+            <Steel>5</Steel>
+        </costList>
+    </TerrainDef>
+
+    <TerrainDef ParentName="WarningTileBase">
+        <defName>LightMetal</defName>
+        <label>Light Metal</label>
+        <description>?</description>
+        <texturePath>Terrain/Surfaces/LightMetal</texturePath>
+        <costList>
+            <Steel>5</Steel>
+        </costList>
+    </TerrainDef>
+
+    <TerrainDef ParentName="WarningTileBase">
+        <defName>BlackMetal</defName>
+        <label>Black Tile</label>
+        <description>?</description>
+        <texturePath>Terrain/Surfaces/BlackMetal</texturePath>
+        <costList>
+            <Steel>5</Steel>
+        </costList>
+    </TerrainDef>
+
+    <TerrainDef ParentName="WarningTileBase">
+        <defName>WhiteMetal</defName>
+        <label>White Tile</label>
+        <description>?</description>
+        <texturePath>Terrain/Surfaces/WhiteMetal</texturePath>
+        <costList>
+            <Steel>5</Steel>
+        </costList>
+    </TerrainDef>
+
+
+</Defs>    

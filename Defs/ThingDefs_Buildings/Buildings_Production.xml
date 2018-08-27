@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+    <!-- Tank -->
+    <ThingDef ParentName="BuildingBase">
+        <defName>RazzChemStorage</defName>
+        <label>ChemStorage</label>
+        <description>Holds Chemfuel.</description>
+        <thingClass>Building_Storage</thingClass>
+        <graphicData>
+            <texPath>Things/Building/Furniture/Production/RazzChemStorage</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(4,3)</drawSize>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>Impassable</passability>
+        <blockWind>true</blockWind>
+        <fillPercent>1</fillPercent>
+        <castEdgeShadows>true</castEdgeShadows>
+        <costList>
+            <Steel>100</Steel>
+            <ComponentIndustrial>10</ComponentIndustrial>
+        </costList>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <Mass>20</Mass>
+            <WorkToBuild>2000</WorkToBuild>
+            <Flammability>0.0</Flammability>
+        </statBases> 
+        <size>(2,2)</size> 
+        <defaultPlacingRot>North</defaultPlacingRot> 
+        <building>
+            <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+            <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+            <defaultStorageSettings>
+                <priority>Important</priority>
+                <filter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </filter>
+            </defaultStorageSettings>
+        </building>
+        <inspectorTabs>
+            <li>ITab_Storage</li>
+        </inspectorTabs>
+        <staticSunShadowHeight>0.5</staticSunShadowHeight>
+        <designationCategory>Production</designationCategory>
+        <surfaceType>Item</surfaceType>
+        <canOverlapZones>false</canOverlapZones>
+        <researchPrerequisites>
+            <li>ComplexFurniture</li>
+        </researchPrerequisites>
+        <tickerType>Normal</tickerType>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>6</explosiveRadius>
+                <explosiveDamageType>Bomb</explosiveDamageType>
+                <chanceNeverExplodeFromDamage>0</chanceNeverExplodeFromDamage>
+            </li>
+        </comps>
+    </ThingDef>
+
+</Defs>

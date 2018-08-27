@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+    <!-- Wall Banner -->
+    <ThingDef ParentName="FurnitureWithQualityBase">
+        <defName>TGSithWallBanner</defName>
+        <label>Sith Wall Banner</label>
+        <thingClass>Building</thingClass>
+        <description>?</description>
+        <thingCategories>
+            <li>BuildingsJoy</li>
+        </thingCategories>
+        <building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<isInert>true</isInert>
+            <isEdifice>false</isEdifice>
+        </building>
+        <clearBuildingArea>false</clearBuildingArea>
+        <graphicData>
+            <texPath>Things/Building/Furniture/WallBanner/SithWallBanner/TGSithWallBanner</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawRotated>true</drawRotated>
+            <shaderType>CutoutComplex</shaderType>
+            <damageData>
+                <rect>(0.35,0.35,0.3,0.3)</rect>
+            </damageData>
+        </graphicData>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <costStuffCount>15</costStuffCount>
+        <rotatable>true</rotatable>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>8</pathCost>
+        <tickerType>Normal</tickerType>
+        <drawerType>RealtimeOnly</drawerType>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <fillPercent>0.15</fillPercent>
+        <statBases>
+            <Mass>5</Mass>
+            <MaxHitPoints>40</MaxHitPoints>
+            <WorkToMake>160</WorkToMake>
+            <Flammability>1.0</Flammability>
+            <Beauty>3</Beauty>
+        </statBases>
+        <selectable>true</selectable>
+        <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+    </ThingDef>
+
+</Defs>

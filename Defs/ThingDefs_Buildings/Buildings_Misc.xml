@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+    <!-- Rugs -->
+    <ThingDef ParentName="BuildingBase">
+        <defName>RazzBlueRug</defName>
+        <label>Star Map Rug</label>
+        <description>?</description>
+        <graphicData>
+            <texPath>Things/Building/Furniture/Misc/RazzBlueRug</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>	  
+            <drawSize>(4.8,5)</drawSize> 
+        </graphicData>
+        <building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<isInert>true</isInert>
+            <isEdifice>false</isEdifice>
+        </building>
+        <costStuffCount>125</costStuffCount>
+	    <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>	
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Beauty>30</Beauty>
+            <WorkToMake>10000</WorkToMake>
+            <Flammability>2</Flammability>
+            <Mass>15</Mass>
+        </statBases>
+        <size>(3,5)</size>
+        <minifiedDef>MinifiedThing</minifiedDef>	
+        <altitudeLayer>FloorEmplacement</altitudeLayer>
+        <passability>Standable</passability>
+        <rotatable>true</rotatable>
+        <socialPropernessMatters>true</socialPropernessMatters>
+        <minTechLevelToBuild>Medieval</minTechLevelToBuild>
+        <fillPercent>0</fillPercent>	
+        <pathCost>0</pathCost>
+        <designationCategory>Joy</designationCategory>
+        <clearBuildingArea>false</clearBuildingArea>
+        <thingCategories>
+            <li>BuildingsJoy</li>
+        </thingCategories>
+        <comps>
+            <li Class="CompProperties_Art">
+                <nameMaker>NamerArtSculpture</nameMaker>
+                <descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+                <canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+            </li>
+        </comps>
+        <inspectorTabs>
+            <li>ITab_Art</li>
+        </inspectorTabs>		
+    </ThingDef>
+
+</Defs>    
