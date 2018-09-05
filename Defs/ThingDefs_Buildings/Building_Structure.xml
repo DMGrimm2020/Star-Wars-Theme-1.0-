@@ -112,6 +112,7 @@
             <texPath>Things/Building/Walls/ImperialWall_Atlas</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <linkType>CornerFiller</linkType>
+	        <shaderType>CutoutComplex</shaderType>
             <linkFlags>
                 <li>Wall</li>
                 <li>Rock</li>
@@ -131,6 +132,216 @@
         <statBases>
             <MaxHitPoints>350</MaxHitPoints>
             <WorkToBuild>135</WorkToBuild>
+            <Flammability>0</Flammability>
+        </statBases>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>Impassable</passability>
+        <blockWind>true</blockWind>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>1</fillPercent>
+        <coversFloor>true</coversFloor>
+        <placingDraggableDimensions>1</placingDraggableDimensions>
+        <tickerType>Never</tickerType>
+        <rotatable>false</rotatable>
+        <selectable>true</selectable>
+        <neverMultiSelect>true</neverMultiSelect>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <holdsRoof>true</holdsRoof>
+        <designationCategory>Structure</designationCategory>
+        <staticSunShadowHeight>1.0</staticSunShadowHeight>
+        <blockLight>true</blockLight>
+        <canOverlapZones>false</canOverlapZones>
+        <costStuffCount>0</costStuffCount>
+        <costList>
+            <Steel>5</Steel>
+        </costList>
+        <building>
+            <isInert>true</isInert>
+            <ai_chillDestination>false</ai_chillDestination>
+            <blueprintGraphicData>
+                <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+             </blueprintGraphicData>
+        </building>
+        <damageMultipliers>
+            <li>
+                <damageDef>Bomb</damageDef>
+                <multiplier>2</multiplier>
+            </li>
+        </damageMultipliers>
+        <designationHotKey>Misc3</designationHotKey>
+    </ThingDef>
+    
+    <ThingDef ParentName="BuildingBase">
+        <defName>ImperialBeamWall</defName>
+        <label>Imperial Beam Wall</label>
+        <description>An impassable wall. Capable of holding up a roof.</description>
+        <thingClass>Building</thingClass>
+        <category>Building</category>
+        <graphicData>
+            <texPath>Things/Building/Walls/ImperialBeamWall_Atlas</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <linkType>CornerFiller</linkType>
+	        <shaderType>CutoutComplex</shaderType>
+            <linkFlags>
+                <li>Wall</li>
+                <li>Rock</li>
+            </linkFlags>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+                <edgeTop>Damage/Edge</edgeTop>
+                <edgeBot>Damage/Edge</edgeBot>
+                <edgeLeft>Damage/Edge</edgeLeft>
+                <edgeRight>Damage/Edge</edgeRight>
+            </damageData>
+        </graphicData>
+        <uiIconPath>Things/Building/Walls/ImperialBeamWall</uiIconPath>
+        <statBases>
+            <MaxHitPoints>500</MaxHitPoints>
+            <WorkToBuild>150</WorkToBuild>
+            <Flammability>0</Flammability>
+        </statBases>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>Impassable</passability>
+        <blockWind>true</blockWind>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>1</fillPercent>
+        <coversFloor>true</coversFloor>
+        <placingDraggableDimensions>1</placingDraggableDimensions>
+        <tickerType>Never</tickerType>
+        <rotatable>false</rotatable>
+        <selectable>true</selectable>
+        <neverMultiSelect>true</neverMultiSelect>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <holdsRoof>true</holdsRoof>
+        <designationCategory>Structure</designationCategory>
+        <staticSunShadowHeight>1.0</staticSunShadowHeight>
+        <blockLight>true</blockLight>
+        <canOverlapZones>false</canOverlapZones>
+        <costStuffCount>0</costStuffCount>
+        <costList>
+            <Steel>5</Steel>
+        </costList>
+        <building>
+            <isInert>true</isInert>
+            <ai_chillDestination>false</ai_chillDestination>
+            <blueprintGraphicData>
+                <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+             </blueprintGraphicData>
+        </building>
+        <damageMultipliers>
+            <li>
+                <damageDef>Bomb</damageDef>
+                <multiplier>2</multiplier>
+            </li>
+        </damageMultipliers>
+        <designationHotKey>Misc3</designationHotKey>
+    </ThingDef>
+        
+    <ThingDef ParentName="BuildingBase">
+        <defName>RebelsWall</defName>
+        <label>Rebels Wall</label>
+        <description>An impassable wall. Capable of holding up a roof.</description>
+        <thingClass>Building</thingClass>
+        <category>Building</category>
+        <graphicData>
+            <texPath>Things/Building/Walls/RebelsWall_Atlas</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <linkType>CornerFiller</linkType>
+	        <shaderType>CutoutComplex</shaderType>
+            <linkFlags>
+                <li>Wall</li>
+                <li>Rock</li>
+            </linkFlags>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+                <edgeTop>Damage/Edge</edgeTop>
+                <edgeBot>Damage/Edge</edgeBot>
+                <edgeLeft>Damage/Edge</edgeLeft>
+                <edgeRight>Damage/Edge</edgeRight>
+            </damageData>
+        </graphicData>
+        <uiIconPath>Things/Building/Walls/RebelsWall</uiIconPath>
+        <statBases>
+            <MaxHitPoints>350</MaxHitPoints>
+            <WorkToBuild>135</WorkToBuild>
+            <Flammability>0</Flammability>
+        </statBases>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>Impassable</passability>
+        <blockWind>true</blockWind>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>1</fillPercent>
+        <coversFloor>true</coversFloor>
+        <placingDraggableDimensions>1</placingDraggableDimensions>
+        <tickerType>Never</tickerType>
+        <rotatable>false</rotatable>
+        <selectable>true</selectable>
+        <neverMultiSelect>true</neverMultiSelect>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <holdsRoof>true</holdsRoof>
+        <designationCategory>Structure</designationCategory>
+        <staticSunShadowHeight>1.0</staticSunShadowHeight>
+        <blockLight>true</blockLight>
+        <canOverlapZones>false</canOverlapZones>
+        <costStuffCount>0</costStuffCount>
+        <costList>
+            <Steel>5</Steel>
+        </costList>
+        <building>
+            <isInert>true</isInert>
+            <ai_chillDestination>false</ai_chillDestination>
+            <blueprintGraphicData>
+                <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+             </blueprintGraphicData>
+        </building>
+        <damageMultipliers>
+            <li>
+                <damageDef>Bomb</damageDef>
+                <multiplier>2</multiplier>
+            </li>
+        </damageMultipliers>
+        <designationHotKey>Misc3</designationHotKey>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>RebelsBeamWall</defName>
+        <label>Rebels Beam Wall</label>
+        <description>An impassable wall. Capable of holding up a roof.</description>
+        <thingClass>Building</thingClass>
+        <category>Building</category>
+        <graphicData>
+            <texPath>Things/Building/Walls/RebelsBeamWall_Atlas</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <linkType>CornerFiller</linkType>
+	        <shaderType>CutoutComplex</shaderType>
+            <linkFlags>
+                <li>Wall</li>
+                <li>Rock</li>
+            </linkFlags>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+                <edgeTop>Damage/Edge</edgeTop>
+                <edgeBot>Damage/Edge</edgeBot>
+                <edgeLeft>Damage/Edge</edgeLeft>
+                <edgeRight>Damage/Edge</edgeRight>
+            </damageData>
+        </graphicData>
+        <uiIconPath>Things/Building/Walls/RebelsBeamWall</uiIconPath>
+        <statBases>
+            <MaxHitPoints>500</MaxHitPoints>
+            <WorkToBuild>150</WorkToBuild>
             <Flammability>0</Flammability>
         </statBases>
         <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
