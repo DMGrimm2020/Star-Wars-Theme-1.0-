@@ -3,5 +3,12 @@
 	<name>Star Wars Theme</name>
 	<author>Tgrimm92</author>
 	<targetVersion>0.19.2009</targetVersion>
-	<description>?</description>
+		<url>https://github.com/tgrimabc</url>
+	<description>Add a Star Wars feel to the game.
+	
+	Credit: 
+		Shotgunfrenzy "Razz"
+				Art
+					I would like to say Razz was a big help.
+	</description>
 </ModMetaData>

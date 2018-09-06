@@ -5,7 +5,7 @@
   <!--========================= Doors =============================-->
     
     <ThingDef ParentName="DoorBase">
-        <defName>ShipDoor</defName>
+        <defName>TGShipDoor</defName>
         <label>Ship Door</label>
         <description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
         <statBases>
@@ -15,7 +15,7 @@
         </statBases>
         <size>(1,1)</size>
         <graphicData>
-            <texPath>Things/Building/Door/ShipDoorMove</texPath>
+            <texPath>Things/Building/Door/TGShipDoorMove</texPath>
             <graphicClass>Graphic_Single</graphicClass>
 	        <shaderType>CutoutComplex</shaderType>
             <drawSize>(1,1)</drawSize>
@@ -25,10 +25,10 @@
                 <enabled>false</enabled>
             </damageData>
         </graphicData>
-        <uiIconPath>Things/Building/Door/ShipDoor</uiIconPath>
+        <uiIconPath>Things/Building/Door/TGShipDoor</uiIconPath>
         <building>
             <blueprintGraphicData>
-                <texPath>Things/Building/Door/ShipDoorBluePrint</texPath>
+                <texPath>Things/Building/Door/TGShipDoorBluePrint</texPath>
             </blueprintGraphicData>
         </building>
         <stuffCategories>
@@ -53,7 +53,7 @@
     </ThingDef>
 
     <ThingDef ParentName="DoorBase">
-        <defName>BaseDoor</defName>
+        <defName>TGBaseDoor</defName>
         <label>Base Door</label>
         <description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
         <statBases>
@@ -63,7 +63,7 @@
         </statBases>
         <size>(1,1)</size>
         <graphicData>
-            <texPath>Things/Building/Door/BaseDoorMove</texPath>
+            <texPath>Things/Building/Door/TGBaseDoorMove</texPath>
             <graphicClass>Graphic_Single</graphicClass>
 	        <shaderType>CutoutComplex</shaderType>
             <drawSize>(1,1)</drawSize>
@@ -73,10 +73,10 @@
                 <enabled>false</enabled>
             </damageData>
         </graphicData>
-        <uiIconPath>Things/Building/Door/BaseDoor</uiIconPath>
+        <uiIconPath>Things/Building/Door/TGBaseDoor</uiIconPath>
         <building>
             <blueprintGraphicData>
-                <texPath>Things/Building/Door/BaseDoorBluePrint</texPath>
+                <texPath>Things/Building/Door/TGBaseDoorBluePrint</texPath>
             </blueprintGraphicData>
         </building>
         <stuffCategories>
@@ -103,13 +103,13 @@
   <!--========================= Walls =============================-->
 
     <ThingDef ParentName="BuildingBase">
-        <defName>ImperialWall</defName>
+        <defName>TGImperialWall</defName>
         <label>Imperial Wall</label>
         <description>An impassable wall. Capable of holding up a roof.</description>
         <thingClass>Building</thingClass>
         <category>Building</category>
         <graphicData>
-            <texPath>Things/Building/Walls/ImperialWall_Atlas</texPath>
+            <texPath>Things/Building/Walls/TGImperialWall_Atlas</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <linkType>CornerFiller</linkType>
 	        <shaderType>CutoutComplex</shaderType>
@@ -128,7 +128,7 @@
                 <edgeRight>Damage/Edge</edgeRight>
             </damageData>
         </graphicData>
-        <uiIconPath>Things/Building/Walls/ImperialWall</uiIconPath>
+        <uiIconPath>Things/Building/Walls/TGImperialWall</uiIconPath>
         <statBases>
             <MaxHitPoints>350</MaxHitPoints>
             <WorkToBuild>135</WorkToBuild>
@@ -154,7 +154,7 @@
         <canOverlapZones>false</canOverlapZones>
         <costStuffCount>0</costStuffCount>
         <costList>
-            <Steel>5</Steel>
+            <Steel>7</Steel>
         </costList>
         <building>
             <isInert>true</isInert>
@@ -173,13 +173,13 @@
     </ThingDef>
     
     <ThingDef ParentName="BuildingBase">
-        <defName>ImperialBeamWall</defName>
-        <label>Imperial Beam Wall</label>
+        <defName>TGImperialBeamWall</defName>
+        <label>Imperial Beam</label>
         <description>An impassable wall. Capable of holding up a roof.</description>
         <thingClass>Building</thingClass>
         <category>Building</category>
         <graphicData>
-            <texPath>Things/Building/Walls/ImperialBeamWall_Atlas</texPath>
+            <texPath>Things/Building/Walls/TGImperialBeamWall_Atlas</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <linkType>CornerFiller</linkType>
 	        <shaderType>CutoutComplex</shaderType>
@@ -198,7 +198,7 @@
                 <edgeRight>Damage/Edge</edgeRight>
             </damageData>
         </graphicData>
-        <uiIconPath>Things/Building/Walls/ImperialBeamWall</uiIconPath>
+        <uiIconPath>Things/Building/Walls/TGImperialBeamWall</uiIconPath>
         <statBases>
             <MaxHitPoints>500</MaxHitPoints>
             <WorkToBuild>150</WorkToBuild>
@@ -224,7 +224,7 @@
         <canOverlapZones>false</canOverlapZones>
         <costStuffCount>0</costStuffCount>
         <costList>
-            <Steel>5</Steel>
+            <Steel>10</Steel>
         </costList>
         <building>
             <isInert>true</isInert>
@@ -243,13 +243,13 @@
     </ThingDef>
         
     <ThingDef ParentName="BuildingBase">
-        <defName>RebelsWall</defName>
+        <defName>TGRebelsWall</defName>
         <label>Rebels Wall</label>
         <description>An impassable wall. Capable of holding up a roof.</description>
         <thingClass>Building</thingClass>
         <category>Building</category>
         <graphicData>
-            <texPath>Things/Building/Walls/RebelsWall_Atlas</texPath>
+            <texPath>Things/Building/Walls/TGRebelsWall_Atlas</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <linkType>CornerFiller</linkType>
 	        <shaderType>CutoutComplex</shaderType>
@@ -268,7 +268,7 @@
                 <edgeRight>Damage/Edge</edgeRight>
             </damageData>
         </graphicData>
-        <uiIconPath>Things/Building/Walls/RebelsWall</uiIconPath>
+        <uiIconPath>Things/Building/Walls/TGRebelsWall</uiIconPath>
         <statBases>
             <MaxHitPoints>350</MaxHitPoints>
             <WorkToBuild>135</WorkToBuild>
@@ -294,7 +294,7 @@
         <canOverlapZones>false</canOverlapZones>
         <costStuffCount>0</costStuffCount>
         <costList>
-            <Steel>5</Steel>
+            <Steel>7</Steel>
         </costList>
         <building>
             <isInert>true</isInert>
@@ -313,13 +313,13 @@
     </ThingDef>
 
     <ThingDef ParentName="BuildingBase">
-        <defName>RebelsBeamWall</defName>
-        <label>Rebels Beam Wall</label>
+        <defName>TGRebelsBeamWall</defName>
+        <label>Rebels Beam</label>
         <description>An impassable wall. Capable of holding up a roof.</description>
         <thingClass>Building</thingClass>
         <category>Building</category>
         <graphicData>
-            <texPath>Things/Building/Walls/RebelsBeamWall_Atlas</texPath>
+            <texPath>Things/Building/Walls/TGRebelsBeamWall_Atlas</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <linkType>CornerFiller</linkType>
 	        <shaderType>CutoutComplex</shaderType>
@@ -338,7 +338,7 @@
                 <edgeRight>Damage/Edge</edgeRight>
             </damageData>
         </graphicData>
-        <uiIconPath>Things/Building/Walls/RebelsBeamWall</uiIconPath>
+        <uiIconPath>Things/Building/Walls/TGRebelsBeamWall</uiIconPath>
         <statBases>
             <MaxHitPoints>500</MaxHitPoints>
             <WorkToBuild>150</WorkToBuild>
@@ -364,7 +364,7 @@
         <canOverlapZones>false</canOverlapZones>
         <costStuffCount>0</costStuffCount>
         <costList>
-            <Steel>5</Steel>
+            <Steel>10</Steel>
         </costList>
         <building>
             <isInert>true</isInert>

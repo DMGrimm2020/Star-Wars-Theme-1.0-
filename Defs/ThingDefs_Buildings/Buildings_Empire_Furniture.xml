@@ -38,11 +38,11 @@
     <!-- Single Beds -->
     
     <ThingDef ParentName="BedWithQualityBase">
-        <defName>ImperialBed</defName>
+        <defName>TGImperialBed</defName>
         <label>Imperial Bed</label>
         <description>?</description>
         <graphicData>
-            <texPath>Things/Building/Furniture/Bed/ImperialBed/ImperialBed</texPath>
+            <texPath>Things/Building/Furniture/Bed/ImperialBed/TGImperialBed</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
             <shaderType>CutoutComplex</shaderType>
             <drawSize>(2,2)</drawSize>

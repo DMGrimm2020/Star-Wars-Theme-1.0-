@@ -15,80 +15,80 @@
     </TerrainDef>
 
     <TerrainDef ParentName="WarningTileBase">
-        <defName>RedWarning</defName>
+        <defName>TGRedWarning</defName>
         <label>Red Warning</label>
         <description>?</description>
-        <texturePath>Terrain/Surfaces/RedWarning</texturePath>
+        <texturePath>Terrain/Surfaces/TGRedWarning</texturePath>
         <costList>
             <Steel>7</Steel>
         </costList>
     </TerrainDef>
 
     <TerrainDef ParentName="WarningTileBase">
-        <defName>OrangeWarning</defName>
+        <defName>TGOrangeWarning</defName>
         <label>Orange Warning</label>
         <description>?</description>
-        <texturePath>Terrain/Surfaces/OrangeWarning</texturePath>
+        <texturePath>Terrain/Surfaces/TGOrangeWarning</texturePath>
         <costList>
             <Steel>7</Steel>
         </costList>
     </TerrainDef>
 
     <TerrainDef ParentName="WarningTileBase">
-        <defName>YellowWarning</defName>
+        <defName>TGYellowWarning</defName>
         <label>Yellow Warning</label>
         <description>?</description>
-        <texturePath>Terrain/Surfaces/YellowWarning</texturePath>
+        <texturePath>Terrain/Surfaces/TGYellowWarning</texturePath>
         <costList>
             <Steel>7</Steel>
         </costList>
     </TerrainDef>
 
     <TerrainDef ParentName="WarningTileBase">
-        <defName>Grate</defName>
+        <defName>TGGrate</defName>
         <label>Grate</label>
         <description>?</description>
-        <texturePath>Terrain/Surfaces/Grate</texturePath>
+        <texturePath>Terrain/Surfaces/TGGrate</texturePath>
         <costList>
             <Steel>5</Steel>
         </costList>
     </TerrainDef>
 
     <TerrainDef ParentName="WarningTileBase">
-        <defName>DarkMetal</defName>
+        <defName>TGDarkMetal</defName>
         <label>Dark Metal</label>
         <description>?</description>
-        <texturePath>Terrain/Surfaces/DarkMetal</texturePath>
+        <texturePath>Terrain/Surfaces/TGDarkMetal</texturePath>
         <costList>
             <Steel>5</Steel>
         </costList>
     </TerrainDef>
 
     <TerrainDef ParentName="WarningTileBase">
-        <defName>LightMetal</defName>
+        <defName>TGLightMetal</defName>
         <label>Light Metal</label>
         <description>?</description>
-        <texturePath>Terrain/Surfaces/LightMetal</texturePath>
+        <texturePath>Terrain/Surfaces/TGLightMetal</texturePath>
         <costList>
             <Steel>5</Steel>
         </costList>
     </TerrainDef>
 
     <TerrainDef ParentName="WarningTileBase">
-        <defName>BlackMetal</defName>
+        <defName>TGBlackMetal</defName>
         <label>Black Tile</label>
         <description>?</description>
-        <texturePath>Terrain/Surfaces/BlackMetal</texturePath>
+        <texturePath>Terrain/Surfaces/TGBlackMetal</texturePath>
         <costList>
             <Steel>5</Steel>
         </costList>
     </TerrainDef>
 
     <TerrainDef ParentName="WarningTileBase">
-        <defName>WhiteMetal</defName>
+        <defName>TGWhiteMetal</defName>
         <label>White Tile</label>
         <description>?</description>
-        <texturePath>Terrain/Surfaces/WhiteMetal</texturePath>
+        <texturePath>Terrain/Surfaces/TGWhiteMetal</texturePath>
         <costList>
             <Steel>5</Steel>
         </costList>

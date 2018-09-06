@@ -4,12 +4,12 @@
 <!-- Reactor -->
 
     <ThingDef ParentName="BuildingBase">
-        <defName>Power_Generator</defName>
+        <defName>TGPower_Generator</defName>
         <label>Power Generator</label>
         <description>?</description>
         <thingClass>Building</thingClass>
         <graphicData>
-            <texPath>Things/Building/Furniture/Power/power</texPath>
+            <texPath>Things/Building/Furniture/Power/TGPower</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
             <drawSize>(4,8)</drawSize>
             <shaderType>CutoutComplex</shaderType>
