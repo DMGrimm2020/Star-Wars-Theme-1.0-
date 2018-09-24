@@ -50,6 +50,9 @@
                 <descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
                 <canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
             </li>
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
         </comps>
         <inspectorTabs>
             <li>ITab_Art</li>
