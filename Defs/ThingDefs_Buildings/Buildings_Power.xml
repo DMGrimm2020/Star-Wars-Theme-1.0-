@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Reactor -->
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>TGPower_Generator</defName>
+        <label>Power Generator</label>
+        <description>?</description>
+        <thingClass>Building</thingClass>
+        <graphicData>
+            <texPath>Things/Building/Furniture/Power/TGPower</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(4,8)</drawSize>
+            <shaderType>CutoutComplex</shaderType>
+            <shadowData>
+                <volume>(5.94, 1.0, 6.71)</volume>
+            </shadowData>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>Impassable</passability>
+        <blockWind>true</blockWind>
+        <fillPercent>1</fillPercent>
+        <blockLight>true</blockLight>
+        <canOverlapZones>false</canOverlapZones>
+        <statBases>
+            <WorkToBuild>65000</WorkToBuild>
+            <MaxHitPoints>500</MaxHitPoints>
+            <Flammability>0</Flammability>
+        </statBases>
+        <tickerType>Normal</tickerType>
+        <size>(4,8)</size>
+        <designationCategory>Power</designationCategory>
+        <costList>
+            <Steel>350</Steel>
+            <Plasteel>280</Plasteel>
+			<Uranium>70</Uranium>
+            <ComponentSpacer>8</ComponentSpacer>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerPlant</compClass>
+                <basePowerConsumption>-3600</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Breakdownable"/>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_NotUnderRoof</li>
+        </placeWorkers>
+        <rotatable>true</rotatable>
+        <constructEffect>ConstructMetal</constructEffect>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <designationHotKey>Misc5</designationHotKey>
+        <researchPrerequisites>
+            <li>Electricity</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    </ThingDef>
+</Defs>
