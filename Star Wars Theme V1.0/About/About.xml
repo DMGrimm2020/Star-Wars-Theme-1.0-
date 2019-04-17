@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Star Wars Theme</name>
+	<author>TGrimm92</author>
+  	<supportedVersions>
+    	<li>1.0</li>
+  	</supportedVersions>
+	<url>https://github.com/tgrimabc</url>
+	<description>Add a Star Wars feel to the game.
+
+	Add Ons
+	-Furniture
+	-Power
+	-Floors
+	-Walls
+	-Art
+	-Doors
+	
+	Credit: 
+		Shotgunfrenzy "Razz"
+				Art
+					I would like to say Razz was a big help.</description>
+</ModMetaData>
