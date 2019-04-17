@@ -46,6 +46,10 @@
         <constructEffect>ConstructDirt</constructEffect>
         <repairEffect>ConstructDirt</repairEffect>
         <designationHotKey>Misc1</designationHotKey>
+        <thingCategories>
+            <li>BuildingsSecurity</li>
+        </thingCategories>
+        <minifiedDef>MinifiedThing</minifiedDef>
     </ThingDef>
 
 </Defs>

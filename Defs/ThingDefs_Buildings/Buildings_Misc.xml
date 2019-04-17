@@ -5,8 +5,8 @@
     <!-- Rugs -->
     <ThingDef ParentName="BuildingBase">
         <defName>RazzBlueRug</defName>
-        <label>Star Map Rug</label>
-        <description>?</description>
+        <label>star map rug</label>
+        <description>The star map rug is nice to have something line to look and walk on.</description>
         <graphicData>
             <texPath>Things/Building/Furniture/Misc/RazzBlueRug</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
@@ -26,7 +26,7 @@
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>
             <Beauty>30</Beauty>
-            <WorkToMake>10000</WorkToMake>
+            <WorkToBuild>14000</WorkToBuild>
             <Flammability>2</Flammability>
             <Mass>15</Mass>
         </statBases>
@@ -56,7 +56,8 @@
         </comps>
         <inspectorTabs>
             <li>ITab_Art</li>
-        </inspectorTabs>		
+        </inspectorTabs>
+        <tradeability>Buyable</tradeability>		
     </ThingDef>
 
 </Defs>    

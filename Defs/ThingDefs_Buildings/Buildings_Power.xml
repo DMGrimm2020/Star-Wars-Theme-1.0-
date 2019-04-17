@@ -6,12 +6,12 @@
     <ThingDef ParentName="BuildingBase">
         <defName>TGPower_Generator</defName>
         <label>Power Generator</label>
-        <description>?</description>
+        <description>Power Generator to power a small town</description>
         <thingClass>Building</thingClass>
         <graphicData>
             <texPath>Things/Building/Furniture/Power/TGPower</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
-            <drawSize>(4,8)</drawSize>
+            <drawSize>(4,9)</drawSize>
             <shaderType>CutoutComplex</shaderType>
             <shadowData>
                 <volume>(5.94, 1.0, 6.71)</volume>
@@ -25,17 +25,19 @@
         </graphicData>
         <altitudeLayer>Building</altitudeLayer>
         <passability>Impassable</passability>
+        <castEdgeShadows>true</castEdgeShadows>
         <blockWind>true</blockWind>
         <fillPercent>1</fillPercent>
-        <blockLight>true</blockLight>
+        <blockLight>false</blockLight>
         <canOverlapZones>false</canOverlapZones>
         <statBases>
             <WorkToBuild>65000</WorkToBuild>
             <MaxHitPoints>500</MaxHitPoints>
             <Flammability>0</Flammability>
+            <Mass>1000</Mass>
         </statBases>
         <tickerType>Normal</tickerType>
-        <size>(4,8)</size>
+        <size>(4,9)</size>
         <designationCategory>Power</designationCategory>
         <costList>
             <Steel>350</Steel>
@@ -62,5 +64,76 @@
             <li>Electricity</li>
         </researchPrerequisites>
         <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+        <thingCategories>
+            <li>BuildingsPower</li>
+        </thingCategories>
+        <minifiedDef>MinifiedThing</minifiedDef>
     </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>TGPortablePower</defName>
+        <label>Portable Power</label>
+        <description>Portable power to power a single house.</description>
+        <thingClass>Building</thingClass>
+        <graphicData>
+            <texPath>Things/Building/Furniture/Power/TGPortablePower</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1,1)</drawSize>
+            <shaderType>CutoutComplex</shaderType>
+            <shadowData>
+                <volume>(5.94, 1.0, 6.71)</volume>
+            </shadowData>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <castEdgeShadows>true</castEdgeShadows>
+        <rotatable>false</rotatable>
+        <blockWind>false</blockWind>
+        <fillPercent>1</fillPercent>
+        <canOverlapZones>false</canOverlapZones>
+        <statBases>
+            <WorkToBuild>10000</WorkToBuild>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Flammability>0</Flammability>
+            <Mass>10</Mass>
+        </statBases>
+        <tickerType>Normal</tickerType>
+        <size>(1,1)</size>
+        <designationCategory>Power</designationCategory>
+        <costList>
+            <Steel>60</Steel>
+            <Plasteel>50</Plasteel>
+			<Uranium>20</Uranium>
+            <ComponentSpacer>1</ComponentSpacer>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerPlant</compClass>
+                <basePowerConsumption>-600</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Breakdownable"/>
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <glowColor>(252,187,113,0)</glowColor>
+            </li>
+            <li Class="CompProperties_HeatPusher">
+                <compClass>CompHeatPusherPowered</compClass>
+                <heatPerSecond>5</heatPerSecond>
+            </li>
+        </comps>
+        <constructEffect>ConstructMetal</constructEffect>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <designationHotKey>Misc5</designationHotKey>
+        <researchPrerequisites>
+            <li>Electricity</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+        <thingCategories>
+            <li>BuildingsPower</li>
+        </thingCategories>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <tradeability>Buyable</tradeability>    
+    </ThingDef>
+
 </Defs>
